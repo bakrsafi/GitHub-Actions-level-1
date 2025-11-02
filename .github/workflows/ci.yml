@@ -32,8 +32,12 @@ jobs:
       run: flake8 .
 
 
-      
+
     #run django checks
     - name: Validate Django
       run: python manage.py check
+
+    #end of the flow
+    - name: end the flow
+      run: echo "Django CI Completed Successfully"
 
